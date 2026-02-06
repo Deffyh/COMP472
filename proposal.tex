@@ -1,0 +1,99 @@
+% CVPR 2022 Paper Template
+% based on the CVPR template provided by Ming-Ming Cheng (https://github.com/MCG-NKU/CVPR_Template)
+% modified and extended by Stefan Roth (stefan.roth@NOSPAMtu-darmstadt.de)
+
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+%%%%%%%%% PAPER TYPE  - PLEASE UPDATE FOR FINAL VERSION
+%\usepackage[review]{cvpr}      % To produce the REVIEW version
+\usepackage{cvpr}              % To produce the CAMERA-READY version
+%\usepackage[pagenumbers]{cvpr} % To force page numbers, e.g. for an arXiv version
+% Include other packages here, before hyperref.
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{float}
+
+
+% It is strongly recommended to use hyperref, especially for the review version.
+% hyperref with option pagebackref eases the reviewers' job.
+% Please disable hyperref *only* if you encounter grave issues, e.g. with the
+% file validation for the camera-ready version.
+%
+% If you comment hyperref and then uncomment it, you should delete
+% ReviewTempalte.aux before re-running LaTeX.
+% (Or just hit 'q' on the first LaTeX run, let it finish, and you
+%  should be clear).
+\usepackage[pagebackref,breaklinks,colorlinks]{hyperref}
+
+
+% Support for easy cross-referencing
+\usepackage[capitalize]{cleveref}
+\crefname{section}{Sec.}{Secs.}
+\Crefname{section}{Section}{Sections}
+\Crefname{table}{Table}{Tables}
+\crefname{table}{Tab.}{Tabs.}
+
+
+%%%%%%%%% PAPER ID  - PLEASE UPDATE
+\def\cvprPaperID{*****} % *** Enter the CVPR Paper ID here
+\def\confName{CVPR}
+\def\confYear{2022}
+
+
+\title{COMP472 Proposal (subject to change)} \author{ Baila Ly {\tt\small 4027963} \quad Sanjay Thambithrurai {\tt\small 4018440} \quad Benjamin Zitella {\tt\small 4021138} \quad Jia Hao To {\tt\small 40263401} \quad Rasel Abdul Samad {\tt\small 4020992} } 
+
+\begin{document}
+	\maketitle
+	%%%%%%%%% BODY TEXT
+	\section{Problem Statement}
+	\label{sec:intro}
+	Identifying footwear from social media imagery (Instagram, Pinterest) is challenging due to high intra-class variance,
+	inconsistent lighting, and obscured branding. This project develops a hierarchical shoe classification system using
+	Convolutional Neural Networks (CNNs) to bridge the gap between user-uploaded photos and specific product
+	metadata. Our goal is to transition from broad category recognition (e.g., Casual vs. Dress) to granular brand and
+	model identification.
+	[text to change]
+	
+	\section{Dataset Selection}
+	\label{sec:dataset}
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{@{}l c @{\hspace{1cm}} c c@{}}
+			\toprule
+			Dataset & Class & Imag/Class & Resolution\\
+			\midrule
+			name1 & 0 & 0 & 0\\
+			name2 & 0 & 0 & 0\\
+			name3 & 0 & 0 & 0\\
+			\bottomrule
+		\end{tabular}
+		\caption{insert text}
+		\label{tab:example}
+	\end{table}
+	
+	\section{Methodology}
+	\label{sec:Method}
+	Our pipeline utilizes a transfer learning approach to handle the diverse resolutions and backgrounds of the aggregated
+	data.All images will be standardized to 224 x 224 pixels and normalized. To prevent overfitting on smaller
+	brand-specific sets,we will apply real-time data augmentation (flips, rotations, and brightness shifts). We will
+	benchmark a custom baseline CNN against a pre-trained ResNet-50 architecture to leverage its residual learning
+	capabilities for complex feature extraction. [To be changed]
+	
+	\pagebreak
+	\section{Gantt Chart}
+	\label{sec:chart}
+	
+	
+	\pagebreak
+	\section{Bibliography}
+	
+	
+	%%%%%%%%% REFERENCES
+	{\small
+		\bibliographystyle{ieee_fullname}
+		\bibliography{egbib}
+	}
+	
+\end{document}
