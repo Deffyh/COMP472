@@ -42,26 +42,19 @@
 \def\confYear{2022}
 
 
-\title{Automated Footwear Classification} \author{%
-	\small % smaller font for the whole line
-	\makebox[\textwidth][c]{%
-		Baila Ly {\tt\small 4027963} \quad
-		Sanjay Thambithrurai {\tt\small 4018440} \quad
-		Benjamin Zitella {\tt\small 4021138} \quad
-		Jia Hao To {\tt\small 40263401} \quad
-		Rasel Abdul Samad {\tt\small 4020992}%
-	}%
-}
+\title{COMP472 Proposal (subject to change)} \author{ Baila Ly {\tt\small 4027963} \quad Sanjay Thambithrurai {\tt\small 4018440} \quad Benjamin Zitella {\tt\small 4021138} \quad Jia Hao To {\tt\small 40263401} \quad Rasel Abdul Samad {\tt\small 4020992} } 
+
 \begin{document}
 	\maketitle
 	%%%%%%%%% BODY TEXT
 	\section{Problem Statement}
 	\label{sec:intro}
-	The intent of footwear classification is to automate identification of footwear types from images, enabling efficient visual understanding for downstream applications.
-	Footwear type classification from images is an important computer vision problem for applications in e-commerce, visual search, and product categorization. However, the task is challenging due to large visual variations of the same footwear categories, and diverse imaging conditions present. 
-	
-	
-	The objective of this project is to evaluate the performance and scalability of various convolutional neural networks (CNN) architectures for footwear images classification across datasets of different complexity. We aim for the results to provide insights into the relationship between the dataset scale and model capacity, such as its strength and limitations of various CNNs when applied to the real-world footwear classification task.
+	Identifying footwear from social media imagery (Instagram, Pinterest) is challenging due to high intra-class variance,
+	inconsistent lighting, and obscured branding. This project develops a hierarchical shoe classification system using
+	Convolutional Neural Networks (CNNs) to bridge the gap between user-uploaded photos and specific product
+	metadata. Our goal is to transition from broad category recognition (e.g., Casual vs. Dress) to granular brand and
+	model identification.
+	[text to change]
 	
 	\section{Dataset Selection}
 	\label{sec:dataset}
@@ -82,27 +75,19 @@
 	
 	\section{Methodology}
 	\label{sec:Method}
-	Our pipeline utilizes a transfer learning approach to handle the diverse resolutions and backgrounds of the aggregated
+		\subsection{Pipeline}
+	Our pipeline focuses a transfer learning approach to handle the diverse resolutions and backgrounds of the aggregated
 	data.All images will be standardized to 224 x 224 pixels and normalized. To prevent overfitting on smaller
 	brand-specific sets,we will apply real-time data augmentation (flips, rotations, and brightness shifts). We will
 	benchmark a custom baseline CNN against a pre-trained ResNet-50 architecture to leverage its residual learning
 	capabilities for complex feature extraction. [To be changed]
 	
-	\clearpage
+	\pagebreak
 	\section{Gantt Chart}
 	\label{sec:chart}
 	
 	
-	\begin{figure}[H]  % H = "here" (requires float package)
-		\centering
-		%%\includegraphics[width=0.8\textwidth]{image.png}  % Adjust width as needed
-		\caption{Gantt Chart for Project Timeline}
-		\label{fig:gantt}
-	\end{figure}
-
-	
-	
-	\clearpage
+	\pagebreak
 	\section{Bibliography}
 	
 	
