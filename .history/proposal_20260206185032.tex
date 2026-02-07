@@ -9,13 +9,12 @@
 \usepackage{cvpr}              % To produce the CAMERA-READY version
 %\usepackage[pagenumbers]{cvpr} % To force page numbers, e.g. for an arXiv version
 % Include other packages here, before hyperref.
-\usepackage{textcomp}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{booktabs}
 \usepackage{float}
-\usepackage{textcomp}
+
 
 % It is strongly recommended to use hyperref, especially for the review version.
 % hyperref with option pagebackref eases the reviewers' job.
@@ -81,10 +80,10 @@
 		\label{tab:example}
 	\end{table}
 	
-	\section{Possible Methodology}
+	\section{Methodology}
 	\label{sec:Method}
 		\subsection{Pipeline}
-	Our pipeline focuses on comparing zero shot baseline models to those utilizing transfer learning
+	Our pipeline focuses comparing zero shot baseline models to those utilizing transfer learning
 	.Three architecture will be implemented: ResNet-50[4], MobileNetV2[5], and VGG-16[6].
 	All three models will be trained from scratch accross three different dataset configurations 
 	(eg.boots, sandals, and shoes) with a total of nine models. These models will be evaluated against two
@@ -92,15 +91,8 @@
 	retail imagery domain.
 
 	\subsection{Data Processing and Training}
-	Images will be resized to 224 x 224[7] and normalized using ImageNet mean and standard deviation to 
-	guarantee compatibility with pre-trained weights[8]. A 70/15/15 train/validation/test split will be 
-	utilized in order to prevent overfitting. Real-time augmentations such as horizontal flips, 
-	\textpm 20\textdegree rotations and zooming will be implemented to handle class imbalance and further 
-	mitigate overfitting. Training will be performed using the loss algorithim Adam optimizer 
-	with a learning rate of $10^4$[9] and the loss function Categorical Cross-Entropy[10] 
-	loss over 50 epochs. The MobileNetV2 will be will be specifically targetted during hyperparameter 
-	tuning, optimizing batch size(16,32,64)[11] and dropout rates to improve performance.
-% 
+	Images will be resized to 224 x 224[7] and normalized using ImageNet mean and standard deviation for 
+	proper compatibility with pre-trained weights.
 	
 	\clearpage
 	\section{Gantt Chart}
