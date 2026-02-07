@@ -49,7 +49,7 @@
 		Sanjay Thambithrurai {\tt\small 4018440} \quad
 		Benjamin Zitella {\tt\small 4021138} \quad
 		Jia Hao To {\tt\small 40263401} \quad
-		Rasel Abdul Samad {\tt\small 4020992}%
+		Rasel Abdul Samad {\tt\small 40209924}%
 	}%
 }
 \begin{document}
@@ -64,21 +64,25 @@
 	The objective of this project is to evaluate the performance and scalability of various convolutional neural networks (CNN) architectures for footwear images classification across datasets of different complexity. We aim for the results to provide insights into the relationship between the dataset scale and model capacity, such as its strength and limitations of various CNNs when applied to the real-world footwear classification task.
 	
 	\section{Dataset Selection}
-	\label{sec:dataset}
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{@{}l c @{\hspace{1cm}} c c@{}}
-			\toprule
-			Dataset & Class & Imag/Class & Resolution\\
-			\midrule
-			name1 & 0 & 0 & 0\\
-			name2 & 0 & 0 & 0\\
-			name3 & 0 & 0 & 0\\
-			\bottomrule
-		\end{tabular}
-		\caption{insert text}
-		\label{tab:example}
-	\end{table}
+    \label{sec:dataset}
+     We selected three shoe classification datasets downloadable from Kaggle with varying complexity. All use JPEG format with RGB color space.
+    \begin{table}[H]
+        \centering
+         \small
+         \begin{tabular}{@{}lcccc@{}}
+             \toprule
+              \textbf{Dataset} & \textbf{Cls} & \textbf{Total} & \textbf{Img/Cls} & \textbf{Res.} \\
+              \midrule
+              Footwear 3K \cite{footwear3k} & 3 & 3,000 & 1,000 & 136$\times$102 \\
+              Shoes Classification \cite{shoesclassification} & 5 & 13,715 & 2,600-2,900 & Variable \\
+              UT Zappos50K \cite{utzappos50k} & 12 & 50,025 & 1,500-2,000 & 136$\times$102 \\
+              \bottomrule
+        \end{tabular}
+         \caption{Footwear datasets with varying class granularity.}
+          \label{tab:datasets}
+    \end{table}
+    The pre-defined train/validation/test folder splits provided by the Shoes Classification Dataset will be used exactly as is. There are no pre-defined splits in the Footwear: Shoe vs. Sandal vs. Boot and UT Zappos50K datasets. During preprocessing, we will define stratified 70/15/15 train/validation/test divides for the Footwear dataset. Using \textit{stratified random sampling}, we will first subsample the 50,025 images for UT Zappos50K. We will extract the 12 most common functional subcategories from the metadata (e.g., running shoes, high heels, loafers, and oxfords), then randomly sample 1,500–2,000 images per subcategory without replacement (seed=42), and create 70/15/15 splits.
+	
 	
 	\section{Methodology}
 	\label{sec:Method}
@@ -95,7 +99,7 @@
 	
 	\begin{figure}[H]  % H = "here" (requires float package)
 		\centering
-		\includegraphics[width=0.8\textwidth]{image.png}  % Adjust width as needed
+		%\includegraphics[width=0.8\textwidth]{image.png}  % Adjust width as needed
 		\caption{Gantt Chart for Project Timeline}
 		\label{fig:gantt}
 	\end{figure}
