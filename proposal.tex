@@ -57,37 +57,51 @@
 	%%%%%%%%% BODY TEXT
 	\section{Problem Statement}
 	\label{sec:intro}
-	Identifying footwear from social media imagery (Instagram, Pinterest) is challenging due to high intra-class variance,
-	inconsistent lighting, and obscured branding. This project develops a hierarchical shoe classification system using
-	Convolutional Neural Networks (CNNs) to bridge the gap between user-uploaded photos and specific product
-	metadata. Our goal is to transition from broad category recognition (e.g., Casual vs. Dress) to granular brand and
-	model identification.
-	[text to change]
+	The intent of footwear classification is to automate identification of footwear types from images, enabling efficient visual understanding for downstream applications.
+	Footwear type classification from images is an important computer vision problem for applications in e-commerce, visual search, and product categorization. However, the task is challenging due to large visual variations of the same footwear categories, and diverse imaging conditions present. 
+	
+	
+	The objective of this project is to evaluate the performance and scalability of various convolutional neural networks (CNN) architectures for footwear images classification across datasets of different complexity. We aim for the results to provide insights into the relationship between the dataset scale and model capacity, such their strengths and limitations of various CNNs when applied to the real-world footwear classification task.
 	
 	\section{Dataset Selection}
 	\label{sec:dataset}
+	 We selected three shoe classification datasets downloadable from Kaggle with varying complexity. All use JPEG format with RGB color space.
 	\begin{table}[H]
 		\centering
-		\begin{tabular}{@{}l c @{\hspace{1cm}} c c@{}}
+		\small
+		\begin{tabular}{@{}lcccc@{}}
 			\toprule
-			Dataset & Class & Imag/Class & Resolution\\
+			\textbf{Dataset} & \textbf{Cls} & \textbf{Total} & \textbf{Img/Cls} & \textbf{Res.} \\
 			\midrule
-			name1 & 0 & 0 & 0\\
-			name2 & 0 & 0 & 0\\
-			name3 & 0 & 0 & 0\\
+			Footwear 3K \cite{footwear3k} & 3 & 3,000 & 1,000 & 136$\times$102 \\
+			Shoes Classification \cite{shoesclassification} & 5 & 13,715 & 2,600-2,900 & Variable \\
+			UT Zappos50K \cite{utzappos50k} & 12 & 50,025 & 1,500-2,000 & 136$\times$102 \\
 			\bottomrule
 		\end{tabular}
-		\caption{insert text}
-		\label{tab:example}
+		\caption{Footwear datasets with varying class granularity.}
+		\label{tab:datasets}
 	\end{table}
+	The pre-defined train/validation/test folder splits provided by the Shoes Classification Dataset will be used exactly as is. There are no pre-defined splits in the Footwear: Shoe vs. Sandal vs. Boot and UT Zappos50K datasets. During preprocessing, we will define stratified 70/15/15 train/validation/test divides for the Footwear dataset. Using \textit{stratified random sampling}, we will first subsample the 50,025 images for UT Zappos50K. We will extract the 12 most common functional subcategories from the metadata (e.g., running shoes, high heels, loafers, and oxfords), then randomly sample 1,500–2,000 images per subcategory without replacement (seed=42), and create 70/15/15 splits.
 	
-	\section{Methodology}
+	\section{Possible Methodology}
 	\label{sec:Method}
-	Our pipeline utilizes a transfer learning approach to handle the diverse resolutions and backgrounds of the aggregated
-	data.All images will be standardized to 224 x 224 pixels and normalized. To prevent overfitting on smaller
-	brand-specific sets,we will apply real-time data augmentation (flips, rotations, and brightness shifts). We will
-	benchmark a custom baseline CNN against a pre-trained ResNet-50 architecture to leverage its residual learning
-	capabilities for complex feature extraction. [To be changed]
+	\subsection{Pipeline}
+	Our pipeline focuses on comparing models trained from scratch to those utilizing transfer learning
+	.Three architecture will be implemented: ResNet-50[4], MobileNetV2[5], and VGG-16[6].
+	All three models will be trained from scratch accross three different datasets of increasing class granularity with a total of nine models. These models will be evaluated against two
+	transfer learning versions (ResNet-50 and MobileNetV2) to assess efficiency pre-trained weigths in the 
+	retail imagery domain.
+	
+	\subsection{Data Processing and Training}
+	Images will be resized to 224 x 224[7] and normalized using ImageNet mean and standard deviation to 
+	guarantee compatibility with pre-trained weights[8]. A 70/15/15 train/validation/test split will be 
+	utilized in order to prevent overfitting. Real-time augmentations such as horizontal flips, 
+	\textpm 20\textdegree rotations and zooming will be implemented to improve generalization and reduce overfitting and further 
+	mitigate overfitting. Training will be performed using the loss algorithim Adam optimizer 
+	with a learning rate of $1\cdot10^{-4}$[9] and the loss function $CrossEntropyLoss$[10] 
+	loss over 50 epochs. The MobileNetV2 will be will be specifically targetted during hyperparameter 
+	tuning, optimizing batch size(16,32,64)[11] and dropout rates to improve performance.
+	% 
 	
 	\clearpage
 	\section{Gantt Chart}
@@ -96,7 +110,7 @@
 	
 	\begin{figure}[H]  % H = "here" (requires float package)
 		\centering
-		\includegraphics[width=0.8\textwidth]{image.png}  % Adjust width as needed
+		%\includegraphics[width=0.8\textwidth]{image.png}  % Adjust width as needed
 		\caption{Gantt Chart for Project Timeline}
 		\label{fig:gantt}
 	\end{figure}
