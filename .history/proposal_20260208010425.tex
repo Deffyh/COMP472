@@ -84,7 +84,7 @@
 	\section{Possible Methodology}
 	\label{sec:Method}
 		\subsection{Pipeline}
-	Our pipeline focuses on comparing from-scratch baseline models to those utilizing transfer learning
+	Our pipeline focuses on comparing zero shot baseline models to those utilizing transfer learning
 	.Three architecture will be implemented: ResNet-50[4], MobileNetV2[5], and VGG-16[6].
 	All three models will be trained from scratch accross three different dataset configurations 
 	listed in table \ref{tab:datasets} (Footwear 3K, Shoes Classification, and UT Zappos50K) with a total of nine models. These models will be evaluated against two
@@ -97,17 +97,12 @@
 	utilized in order to prevent overfitting. Real-time augmentations such as horizontal flips, 
 	\textpm 20\textdegree rotations and zooming will be implemented to handle class imbalance and further 
 	mitigate overfitting. Training will be performed using the loss algorithim Adam optimizer 
-	with a learning rate of $10^-4$[9] and the loss function Categorical Cross-Entropy[10] 
+	with a learning rate of $10^4$[9] and the loss function Categorical Cross-Entropy[10] 
 	loss over 50 epochs. The MobileNetV2 will be will be specifically targetted during hyperparameter 
 	tuning, optimizing batch size(16,32,64)[11] and dropout rates to improve performance.
 
-	\subsection{Evaluation and Analysis}
+	\subsection{Evolution and Analysis}
 	The model performance will be evaluated using Top-1 Accuracy, Precision, Recall, and F-1Score. 
-	Transfer learning models are expected to reach above 92\% in accuraccy on the catalog-style UT Zappos50K data, 
-	while scratch models may struggle with granularity of its 12 subcategories. Feature extraction will be analyzed using 
-	T-SNE for dimensional reduction of latent space[12] and Grad-CAM will serve to vizualize class-discriminative regions
-	in at least four of our models[13]. Failure cases will be evaluated with Confusion Matrices to provide
-	scientific insights into intra-class variance a common challenge in resilient automated visual search tools[14].
 
 % 
 	

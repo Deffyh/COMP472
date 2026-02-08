@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  6 FEB 2026 19:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  8 FEB 2026 01:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -413,6 +413,9 @@ Overfull \hbox (12.00002pt too wide) in paragraph at lines 59--59
  [][] 
  []
 
+
+LaTeX Warning: Reference `tab:datasets' on page 1 undefined on input line 90.
+
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 98.
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -450,24 +453,28 @@ LaTeX Warning: Empty `thebibliography' environment on input line 3.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `proposal.out' has not changed.
-(rerunfilecheck)             Checksum: EE81641DAFABE9A9065F9D12CF64D1B4;1006.
+(rerunfilecheck)             Checksum: C33ED3D36F397A83F128E690F6537B4F;1197.
 Package rerunfilecheck Info: File `proposal.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13741 strings out of 474662
- 229668 string characters out of 5751110
- 651895 words of memory out of 5000000
- 36589 multiletter control sequences out of 15000+600000
- 575751 words of font info for 78 fonts, out of 8000000 for 9000
+ 13746 strings out of 474662
+ 229732 string characters out of 5751110
+ 654895 words of memory out of 5000000
+ 36592 multiletter control sequences out of 15000+600000
+ 577377 words of font info for 80 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  90i,10n,93p,496b,446s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on proposal.pdf (3 pages, 61701 bytes).
+</usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on proposal.pdf (3 pages, 64820 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 

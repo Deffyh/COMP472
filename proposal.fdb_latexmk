@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex proposal"] 1770424631.01812 "proposal.aux" "proposal.bbl" "proposal" 1770424777.00404 0
+["bibtex proposal"] 1770531907.81233 "proposal.aux" "proposal.bbl" "proposal" 1770531922.30893 0
   "./egbib.bib" 1770342386.93582 2971 4d6cb2afc0a46aea1e444edcdaea4e6a ""
   "./ieee_fullname.bst" 1770342386.93603 19905 72b73f4cb1c51eaa1a7af8ecad2b6bfb ""
-  "proposal.aux" 1770424776.91812 2265 382569156cb171ff2535b3402220e5e4 "pdflatex"
+  "proposal.aux" 1770531922.20976 2408 689fe8d6f799f8e860a0884f6992c1dc "pdflatex"
   (generated)
   "proposal.bbl"
   "proposal.blg"
   (rewritten before read)
-["pdflatex"] 1770424776.3203 "/Users/bailaly/COMP472/proposal.tex" "proposal.pdf" "proposal" 1770424777.00421 0
-  "/Users/bailaly/COMP472/proposal.tex" 1770424776.02884 5155 678056bb9e502e6f76a4fa09acca2d69 ""
+["pdflatex"] 1770531921.52682 "/Users/bailaly/COMP472/proposal.tex" "proposal.pdf" "proposal" 1770531922.3092 0
+  "/Users/bailaly/COMP472/proposal.tex" 1770531921.28117 5924 b3fdd709d0fbf10caa40aca8d2467d5c ""
   "/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025basic/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
   "/usr/local/texlive/2025basic/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm" 1136768653 1292 bd42be2f344128bff6d35d98474adfe3 ""
@@ -38,7 +38,7 @@
   "/usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
-  "/usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
+  "/usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb" 1136849748 45758 19968a0990191524e34e1994d4a31cb6 ""
   "/usr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1136849748 46026 6dab18b61c907687b520c72847215a68 ""
@@ -119,11 +119,11 @@
   "/usr/local/texlive/2025basic/texmf-var/web2c/pdftex/pdflatex.fmt" 1741448339 2663854 a6f6b8c904d47faabe5d94cfdac61310 ""
   "/usr/local/texlive/2025basic/texmf.cnf" 1741448314 628 81d1ada0f601fb1ffa62f1323192d946 ""
   "cvpr.sty" 1770342386.93525 22663 ae69ac60d981219f288927532f3b519c ""
-  "proposal.aux" 1770424776.91812 2265 382569156cb171ff2535b3402220e5e4 "pdflatex"
-  "proposal.bbl" 1770424631.03895 62 d49dbf9d4b1773efa2d694c4016814c1 "bibtex proposal"
-  "proposal.brf" 1770424776.91628 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "proposal.out" 1770424776.91881 1006 ee81641dafabe9a9065f9d12cf64d1b4 "pdflatex"
-  "proposal.tex" 1770424776.02884 5155 678056bb9e502e6f76a4fa09acca2d69 ""
+  "proposal.aux" 1770531922.20976 2408 689fe8d6f799f8e860a0884f6992c1dc "pdflatex"
+  "proposal.bbl" 1770531907.83309 62 d49dbf9d4b1773efa2d694c4016814c1 "bibtex proposal"
+  "proposal.brf" 1770531922.20789 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "proposal.out" 1770531922.21074 1197 c33ed3d36f397a83f128e690f6537b4f "pdflatex"
+  "proposal.tex" 1770531921.28117 5924 b3fdd709d0fbf10caa40aca8d2467d5c ""
   (generated)
   "proposal.aux"
   "proposal.brf"
