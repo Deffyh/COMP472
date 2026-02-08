@@ -98,11 +98,11 @@
 	\textpm 20\textdegree rotations and zooming will be implemented to handle class imbalance and further 
 	mitigate overfitting. Training will be performed using the loss algorithim Adam optimizer 
 	with a learning rate of $10^-4$[9] and the loss function Categorical Cross-Entropy
-	loss over 50 epochs[10]. The MobileNetV2 will be will be specifically targetted during hyperparameter 
+	loss over 50 epochs[10] . The MobileNetV2 will be will be specifically targetted during hyperparameter 
 	tuning, optimizing batch size(16,32,64)[11] and dropout rates to improve performance.
 
 	\subsection{Evaluation and Analysis}
-	The model performance will be evaluated using Top-1 Accuracy, Precision, Recall, and F1-Score. 
+	The model performance will be evaluated using Top-1 Accuracy, Precision, Recall, and F-1Score. 
 	Transfer learning models are expected to reach above 92\% in accuraccy on the catalog-style UT Zappos50K data, 
 	while scratch models may struggle with granularity of its 12 subcategories. Feature extraction will be analyzed using 
 	T-SNE for dimensional reduction of latent space[12] and Grad-CAM will serve to vizualize class-discriminative regions

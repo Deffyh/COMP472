@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex proposal"] 1770531907.81233 "proposal.aux" "proposal.bbl" "proposal" 1770531922.30893 0
+["bibtex proposal"] 1770531907.81233 "proposal.aux" "proposal.bbl" "proposal" 1770532403.1993 0
   "./egbib.bib" 1770342386.93582 2971 4d6cb2afc0a46aea1e444edcdaea4e6a ""
   "./ieee_fullname.bst" 1770342386.93603 19905 72b73f4cb1c51eaa1a7af8ecad2b6bfb ""
-  "proposal.aux" 1770531922.20976 2408 689fe8d6f799f8e860a0884f6992c1dc "pdflatex"
+  "proposal.aux" 1770532403.1014 2408 689fe8d6f799f8e860a0884f6992c1dc "pdflatex"
   (generated)
   "proposal.bbl"
   "proposal.blg"
   (rewritten before read)
-["pdflatex"] 1770531921.52682 "/Users/bailaly/COMP472/proposal.tex" "proposal.pdf" "proposal" 1770531922.3092 0
-  "/Users/bailaly/COMP472/proposal.tex" 1770531921.28117 5924 b3fdd709d0fbf10caa40aca8d2467d5c ""
+["pdflatex"] 1770532402.4033 "/Users/bailaly/COMP472/proposal.tex" "proposal.pdf" "proposal" 1770532403.19951 0
+  "/Users/bailaly/COMP472/proposal.tex" 1770532402.13964 5923 32498596fa7a3ef83c1d417f2d52855c ""
   "/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025basic/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
   "/usr/local/texlive/2025basic/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm" 1136768653 1292 bd42be2f344128bff6d35d98474adfe3 ""
@@ -119,11 +119,11 @@
   "/usr/local/texlive/2025basic/texmf-var/web2c/pdftex/pdflatex.fmt" 1741448339 2663854 a6f6b8c904d47faabe5d94cfdac61310 ""
   "/usr/local/texlive/2025basic/texmf.cnf" 1741448314 628 81d1ada0f601fb1ffa62f1323192d946 ""
   "cvpr.sty" 1770342386.93525 22663 ae69ac60d981219f288927532f3b519c ""
-  "proposal.aux" 1770531922.20976 2408 689fe8d6f799f8e860a0884f6992c1dc "pdflatex"
+  "proposal.aux" 1770532403.1014 2408 689fe8d6f799f8e860a0884f6992c1dc "pdflatex"
   "proposal.bbl" 1770531907.83309 62 d49dbf9d4b1773efa2d694c4016814c1 "bibtex proposal"
-  "proposal.brf" 1770531922.20789 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "proposal.out" 1770531922.21074 1197 c33ed3d36f397a83f128e690f6537b4f "pdflatex"
-  "proposal.tex" 1770531921.28117 5924 b3fdd709d0fbf10caa40aca8d2467d5c ""
+  "proposal.brf" 1770532403.09959 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "proposal.out" 1770532403.10245 1197 c33ed3d36f397a83f128e690f6537b4f "pdflatex"
+  "proposal.tex" 1770532402.13964 5923 32498596fa7a3ef83c1d417f2d52855c ""
   (generated)
   "proposal.aux"
   "proposal.brf"
